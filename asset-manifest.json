@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/resume-maker/static/css/main.72ca6d91.css",
+    "main.js": "/resume-maker/static/js/main.3bf778da.js",
+    "static/js/787.5cb99982.chunk.js": "/resume-maker/static/js/787.5cb99982.chunk.js",
+    "static/media/whatsapp.svg": "/resume-maker/static/media/whatsapp.7dc3f3267bee9b39fd8d08466208e48a.svg",
+    "static/media/github.svg": "/resume-maker/static/media/github.4cd3a2bc790226c346ae943ec1622139.svg",
+    "index.html": "/resume-maker/index.html",
+    "static/media/gmail.svg": "/resume-maker/static/media/gmail.e1bc2ceb745debf9361ad2160a79823a.svg",
+    "static/media/linkedin.svg": "/resume-maker/static/media/linkedin.8762f6e957e5d6c297b9cbc434ecf218.svg",
+    "main.72ca6d91.css.map": "/resume-maker/static/css/main.72ca6d91.css.map",
+    "main.3bf778da.js.map": "/resume-maker/static/js/main.3bf778da.js.map",
+    "787.5cb99982.chunk.js.map": "/resume-maker/static/js/787.5cb99982.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72ca6d91.css",
+    "static/js/main.3bf778da.js"
+  ]
+}
