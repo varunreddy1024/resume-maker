@@ -1,0 +1,382 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Calibri", sans-serif;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    margin: 25px 20px;
+    background-color: rgb(29, 29, 29);
+}
+
+.teCen {
+    text-align: center !important;
+}
+
+h1 {
+    font-size: 16.0pt !important;
+    line-height: 107% !important;
+}
+
+h2 {
+    font-size: 12.0pt !important;
+    line-height: 107% !important;
+    background-color: #ddd !important;
+    padding: 3px 8px;
+    text-transform: uppercase;
+    margin-bottom: 6pt;
+}
+
+h3 {
+    font-size: 12.0pt !important;
+    line-height: 107% !important;
+    font-weight: normal;
+}
+
+p {
+    font-size: 11.0pt !important;
+    line-height: 107% !important;
+}
+
+.EduTable {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    font-size: 11.0pt !important;
+    line-height: 107% !important;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 2px 10px;
+}
+
+ul {
+    margin-left: 50px;
+}
+
+.noWrap {
+    white-space: nowrap;
+}
+
+.marBot {
+    margin-bottom: 8pt;
+}
+
+.proDate {
+    float: right;
+    margin-right: 30px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #00e;
+}
+
+
+.resume {
+    padding: 30px 20px;
+    overflow: auto;
+    position: fixed;
+    background-color: white;
+    border: solid 1px black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.FormInter {
+    height: 90vh;
+    overflow: auto;
+    width: 30vw;
+    position: fixed;
+    top: 5vh;
+    left: 1.5vw;
+    z-index: 1000;
+    margin: 0px;
+    background-color: white;
+    border: solid 1px black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3px 0px;
+}
+
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    color: #f33170 !important;
+}
+
+
+
+.divReLink .ReLink {
+    border-right: 2px black solid;
+}
+
+.divReLink .ReLink:last-child {
+    border-right: none;
+}
+
+.ReLink img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+/*Label & fieldset effect*/
+
+form {
+    display: block;
+    margin: 10px auto;
+    padding: 4px;
+}
+
+
+fieldset {
+    position: relative;
+    margin: 40px 10px 10px 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.firFieSet {
+    margin: 10px 10px 10px 10px !important;
+}
+
+.remBut {
+    font-size: 1.5rem;
+    position: absolute;
+    top: -2rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+
+legend {
+
+    background-color: #111;
+    color: #fff;
+    padding: 4px 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    transform: translate(0, -2.75rem);
+}
+
+input {
+    width: 100%;
+    margin-top: 1.25rem;
+    padding: 0.25rem;
+    border: none;
+    border-bottom: 2px solid #111;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: green;
+}
+
+.addBut {
+    margin: 10px 25px;
+    padding: 0.75rem 0px;
+    width: calc(100% - 50px);
+    border: 2px solid #111;
+    background-color: #111;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+@supports (not (-ms-ime-align:auto)) {
+    label {
+        color: #666;
+        font-weight: bold;
+        transform: translate(0.25rem, -1.5rem);
+        transition: all 0.2s ease-out;
+    }
+
+    input:focus+label,
+    input:not(:placeholder-shown)+label {
+        font-weight: normal;
+        color: #000;
+        transform: translate(0, -2.75rem);
+    }
+}
+
+.ZeroFieSet {
+    margin: 0px 10px 10px 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.divCheBo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-top: 0px;
+    padding: 0px;
+    position: relative;
+    appearance: none;
+    width: 2rem;
+    height: 1rem;
+    background: #ccc;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+input:checked[type="checkbox"] {
+    background: red;
+}
+
+input[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+input:checked[type="checkbox"]::after {
+    left: 50%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.spliFor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spliChd {
+    width: 48%;
+}
+
+.DivAchiFor {
+    width: calc(100% - 3rem);
+    position: relative;
+}
+
+.DivAchiFor .remBut {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 1.1rem !important;
+    right: -2.5rem !important;
+    cursor: pointer;
+}
+
+.custom-file-upload {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    transition: none;
+    transform: translate(0, 0);
+    margin: 10px 25px;
+    padding: 0.75rem 0px;
+    width: calc(100% - 50px);
+    border: 2px solid #111;
+    background-color: #111;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.84rem;
+}
+
+.fulDivBut {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fulDivBut .FDBChd {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fulDivBut .FDBChd .equal {
+    width: 90% !important;
+    margin: 15px 4px 8px 4px !important;
+}
+
+#file-upload {
+    display: none;
+}
+
+@media print {
+    body {
+        background-color: white !important;
+    }
+
+    .FormInter {
+        display: none !important;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    .resume {
+        top: 0px !important;
+        right: 0px !important;
+        transform: scale(1) !important;
+        height: max-content !important;
+        width: fit-content !important;
+        padding: 0px !important;
+        position: absolute !important;
+        background-color: white !important;
+        border: none !important;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75) !important;
+    }
+}
