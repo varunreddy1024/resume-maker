@@ -471,15 +471,15 @@ class FullFun extends React.Component {
 
           <div className='fulDivBut'>
             <div className='FDBChd'>
-              <button onClick={this.exportFile} className="addBut equal">Save as Text File</button></div>
+              <button type="button" onClick={this.exportFile} className="addBut equal">Save as Text File</button></div>
             <div className='FDBChd'>
               <label htmlFor="file-upload" className="custom-file-upload equal">
                 Custom Upload
               </label>
               <input type="file" id="file-upload" onChange={this.showFile} /></div>
           </div>
-          <button onClick={this.generatePDF} className="addBut">Print as PDF</button>
-          <form onSubmit={this.handleSubmit} onKeyDown={this.handleSubmit}>
+          <button type="button" onClick={this.generatePDF} className="addBut">Print as PDF</button>
+          <form onSubmit={this.handleSubmit}>
             <fieldset className='ZeroFieSet'>
               <div className='spliFor'>
                 <div className='spliChd'>
@@ -510,7 +510,7 @@ class FullFun extends React.Component {
               {this.state.education.map((con, index) => {
                 return (<NewForEduRow rem={this.remove} cha={this.setEducation} base={this.state.education} ind={index} key={index}></NewForEduRow>);
               })}
-              <button onClick={this.newForEdu} className="fAddEdu addBut">+ Add Education</button>
+              <button type="button" onClick={this.newForEdu} className="fAddEdu addBut">+ Add Education</button>
             </div>
 
             <div id="divForExp">
@@ -518,7 +518,7 @@ class FullFun extends React.Component {
                 return (<NewForExp rem={this.remove} achiRem={this.removeInAchi} achiAdd={this.newForDivAchi} cha={this.setExperience} achCha={this.setExpAchi} base={this.state.experience} ind={index} key={index}></NewForExp>);
               })}
 
-              <button onClick={this.newForExperience} className="fAddProject addBut">+ Add Experience</button>
+              <button type="button" onClick={this.newForExperience} className="fAddProject addBut">+ Add Experience</button>
             </div>
 
             <div id="divForPro">
@@ -526,7 +526,7 @@ class FullFun extends React.Component {
                 return (<NewForPro rem={this.remove} achiRem={this.removeInAchi} achiAdd={this.newForDivAchi} cha={this.setProjects} achCha={this.setProAchi} base={this.state.projects} ind={index} key={index}></NewForPro>);
               })}
 
-              <button onClick={this.newForProject} className="fAddProject addBut">+ Add Projects</button>
+              <button type="button" onClick={this.newForProject} className="fAddProject addBut">+ Add Projects</button>
             </div>
 
             <div id="divForSkills">
@@ -534,7 +534,7 @@ class FullFun extends React.Component {
                 return (<NewForSkills rem={this.remove} cha={this.setSkills} base={this.state.skills} ind={index} key={index}></NewForSkills>);
               })}
 
-              <button onClick={this.newForSkill} className="fAddSkills addBut">+ Add Skills</button>
+              <button type="button" onClick={this.newForSkill} className="fAddSkills addBut">+ Add Skills</button>
             </div>
 
             <div id="divForAchiv">
@@ -544,7 +544,7 @@ class FullFun extends React.Component {
                   return (<NewForAchievement rem={this.remove} cha={this.setAchievement} base={this.state.achievements} ind={index} key={index}></NewForAchievement>);
                 })}
 
-                <button onClick={this.newForAchi} className="fAddAchi addBut">+ Add Achievement</button>
+                <button type="button" onClick={this.newForAchi} className="fAddAchi addBut">+ Add Achievement</button>
               </fieldset>
             </div>
 
@@ -553,7 +553,7 @@ class FullFun extends React.Component {
                 return (<NewForPosition rem={this.remove} cha={this.setPositions} achiRem={this.removeInAchi} achiAdd={this.newForDivAchi} achCha={this.setPosAchi} base={this.state.positions} ind={index} key={index}></NewForPosition>);
               })}
 
-              <button onClick={this.newForPosition} className="fAddPosition addBut">+ Add Positions</button>
+              <button type="button" onClick={this.newForPosition} className="fAddPosition addBut">+ Add Positions</button>
             </div>
 
           </form>
@@ -670,7 +670,7 @@ function NewForExp(props) {
         </div>
         {achi}
 
-        <button onClick={() => { achiAdd(base, ind) }} className="fAddExpAchi addBut">+ Add Achievement</button>
+        <button type="button" onClick={() => { achiAdd(base, ind) }} className="fAddExpAchi addBut">+ Add Achievement</button>
       </fieldset>
     </div>
   );
@@ -736,7 +736,7 @@ function NewForPro(props) {
         </div>
         {achi}
 
-        <button onClick={() => { achiAdd(base, ind) }} className="fAddExpAchi addBut">+ Add Achievement</button>
+        <button type="button" onClick={() => { achiAdd(base, ind) }} className="fAddExpAchi addBut">+ Add Achievement</button>
       </fieldset>
     </div>
   );
@@ -841,7 +841,7 @@ function NewForPosition(props) {
         <input id={"PosTimLin-" + ind} name="timeline" className="fTimeline" onChange={cha} value={base[ind].timeline} type="text" placeholder=" " />
         <label htmlFor={"PosTimLin-" + ind}>Position Timeline</label>
         {achi}
-        <button onClick={() => { achiAdd(base, ind) }} className="fAddExpAchi addBut">+ Add Achievement</button>
+        <button type="button" onClick={() => { achiAdd(base, ind) }} className="fAddExpAchi addBut">+ Add Achievement</button>
 
       </fieldset>
     </div>
